@@ -107,11 +107,11 @@ function findJ(){
 }
 
 // Create new array with firstname and lastname
-function arr(){
-    return customers.map((elm) => elm);
-}
-
-arr();
+var arrNew = [];
+var name = customers.forEach(function(element) {
+  arrNew.push(`${element.firstname} + ${element.lastname}`);
+});
+arrNew;
 
 // Sort the array created above alphabetically
-
+arrNew.sort();
